@@ -44,7 +44,8 @@ def main():
             for i, j in swaps:
                 print(i,j)
     else:
-        print("ERROR")
+        print("Error")
+        exit()
 
 
 if __name__ == "__main__":
