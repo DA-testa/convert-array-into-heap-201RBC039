@@ -2,6 +2,7 @@
 
 
 def build_heap(data):
+    swaps = []
     n = len(data)
     for i in range(n//2, -1,-1):
         down(i, data,swaps)
