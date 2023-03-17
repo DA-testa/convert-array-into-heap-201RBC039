@@ -36,7 +36,7 @@ def main():
     elif 'F' in input_type:
         
         filename = input()
-        with open("test/" + filename, 'r') as f:
+        with open("tests/" + filename, 'r') as f:
             n = int(f.readline())
             data = list(map(int, f.readline().split()))
             assert len(data) == n
