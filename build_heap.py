@@ -28,21 +28,22 @@ def main():
         data = list(map(int, input().split()))
         assert len(data) == n
         swaps = build_heap(data)
-
-    print(len(swaps))
-    for i, j in swaps:
-        print(i,j)
+        print(len(swaps))
+        for i, j in swaps:
+            print(i, j)
     
     elif 'F' in input_type:
+        
         filename = input()
         with open("test/" + filename, 'r') as f:
             n = int(f.readline())
             data = list(map(int, f.readline().split()))
             assert len(data) == n
             swaps = build_heap(data)
+
             print(len(swaps))
             for i, j in swaps:
-                print(i,j)
+                print(i, j)
     else:
         print("Error")
         exit()
